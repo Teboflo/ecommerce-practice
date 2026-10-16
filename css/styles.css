@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: black;
+    display: flex;
+    gap: 50px;
+    padding: 10px 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 80px;
+    text-transform: uppercase;
+    height: 80px;
+    color: white;
+}
+
+h1 u {
+    text-decoration: none;
+    color: yellow;
+}
+
+.filtro-container {
+    width: 90%;
+    height: auto;
+    padding: 0px 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filtro {
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    background: yellow;
+    color: black;
+    outline: none;
+    border: 2px solid transparent;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.filtro:hover {
+    border: 2px solid yellow;
+    background: black;
+    color: yellow;
+}
+
+.filtro option {
+    background: black;
+    color: yellow;
+}
+
+.count-carrito {
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    background: yellow;
+    color: black;
+    outline: none;
+    border: 2px solid transparent;
+    font-weight: 500;
+    text-decoration: none;
+    overflow: hidden;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.count-carrito:hover {
+    border: 2px solid yellow;
+    background: black;
+    color: yellow;
+}
+
+.count-carrito:hover .contador {
+    background: yellow;
+    color: black;
+}
+
+.contador {
+    padding: 5px;
+    border-radius: 50%;
+    background: black;
+    color: yellow;
+    font-size: 14px;
+}
+
+.contenedor-productos {
+    width: 90%;
+    height: auto;
+    padding: 20px 20px;
+    background: white;
+    border-radius: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+.producto {
+    width: 19%;
+    height: 250px;
+    padding: 10px 20px;
+    background: black;
+    border-radius: 12px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.75);
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.name-producto {
+    color: yellow;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.prize {
+    font-weight: 600;
+    color: white;
+    font-size: 20px;
+}
+
+.add-shopcar {
+    border: 2px solid transparent;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background: yellow;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: black;
+    cursor: pointer;
+    transition: ease-in .3s;
+}
+
+.btn-comprar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.btn-comprar svg {
+    transition: transform 0.5s ease;
+}
+
+.add-shopcar:hover {
+    border: 2px solid yellow;
+    background: black;
+    color: yellow;
+}
+
+.add-shopcar:hover svg {
+    animation: rotar 1.5s linear 2;
+}
+
+@keyframes rotar {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
