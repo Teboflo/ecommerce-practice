@@ -1,35 +1,75 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Productos</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Catálogo de postres y bebidas.">
+    <title>Catálogo | Retail Bold</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-    <h1>Catálogo de <u>Productos</u></h1>
-    <div class="filtro-container" style="margin-bottom: 20px;">
-        <select id="filtro-categoria" class="filtro">
-            <option value="todos">Todas las Categorías</option>
-            <option value="Bebida">Bebidas</option>
-            <option value="Postre">Postres</option>
-        </select>
-        <a href="pages/shopcar.html" class="count-carrito"><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                height="24" fill="currentColor" viewBox="0 0 24 24">
-                <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
-                <path
-                    d="M21 4H6.17l-.18-1.15A1 1 0 0 0 5 2H2v2h2.14l1.87 12.15A1 1 0 0 0 7 17h12v-2H7.86l-.31-2H19c.45 0 .84-.3.96-.73l2-7A1 1 0 0 0 21 3.99Zm-2.75 7H7.24l-.77-5h13.2l-1.43 5ZM8 18a2 2 0 1 0 0 4 2 2 0 1 0 0-4m9 0a2 2 0 1 0 0 4 2 2 0 1 0 0-4">
-                </path>
-            </svg>Ir a Carrito <span id="product-count" class="contador">0</span></a>
-    </div>
-    <div class="contenedor-productos">
-
-    </div>
-
-
+    <header class="site-header">
+        <a class="brand" href="index.html">RETAIL<span>BOLD.</span></a>
+        <nav aria-label="Navegación principal"><a href="#catalogo">Catálogo</a><a href="#beneficios">Nuestra
+                propuesta</a><a class="cart-link" href="pages/shopcar.html">Mi carrito ↗</a></nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-copy">
+                <p class="eyebrow">● HECHO PARA ANTOJARSE</p>
+                <h1>Tus favoritos.<br><span>Sin complicaciones.</span></h1>
+                <p class="hero-description">Descubre una selección de postres y bebidas para disfrutar cada momento.</p>
+                <a class="button" href="#catalogo">Explorar catálogo ↓</a>
+            </div>
+            <div class="hero-visual" aria-label="Espacio reservado para fotografía real de productos">
+                <div class="photo-placeholder"><b>＋</b><strong>FOTOGRAFÍA REAL DE PRODUCTOS</strong><span>Inserta aquí
+                        una imagen auténtica de tus productos.</span></div>
+                <div class="sticker">BUENO.<br>RICO.<br><span>Y PUNTO.</span></div>
+            </div>
+            <div class="hero-foot"><span>SELECCIÓN DE POSTRES Y BEBIDAS</span><span>DESCUBRE EL CATÁLOGO ↓</span></div>
+        </section>
+        <section class="catalog-section" id="catalogo">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">ENCUENTRA TU FAVORITO</p>
+                    <h2>El catálogo<span>.</span></h2>
+                    <p class="muted">Una selección para darle sabor a tu día.</p>
+                </div>
+                <div class="filter"><label for="filtro-categoria">Filtrar por categoría</label><select
+                        id="filtro-categoria" name="categoria">
+                        <option value="todos">Todas las categorías</option>
+                        <option value="Postre">Postres</option>
+                        <option value="Bebida">Bebidas</option>
+                    </select></div>
+            </div>
+            <div class="catalog-meta"><span>PRODUCTOS DISPONIBLES</span><span id="product-count">Explora el
+                    catálogo</span></div>
+            <div class="contenedor-productos"><!-- Los productos se renderizan desde js/app.js --></div>
+        </section>
+        <section class="benefits" id="beneficios">
+            <div>
+                <p class="eyebrow">UNA FORMA MÁS SIMPLE</p>
+                <h2>Elegir bien.<br><span>Disfrutar más.</span></h2>
+            </div>
+            <article><small>01</small>
+                <h3>Encuentra</h3>
+                <p>Explora el catálogo y descubre opciones para tu antojo.</p>
+            </article>
+            <article><small>02</small>
+                <h3>Elige</h3>
+                <p>Selecciona tus productos favoritos en pocos pasos.</p>
+            </article>
+            <article><small>03</small>
+                <h3>Disfruta</h3>
+                <p>Revisa tu carrito antes de finalizar tu compra.</p>
+            </article>
+        </section>
+    </main>
+    <footer><a class="brand" href="index.html">RETAIL<span>BOLD.</span></a>
+        <p>Buenos productos. Buenos momentos.</p><a href="#catalogo">Volver al catálogo ↑</a>
+    </footer>
     <script src="js/app.js"></script>
 </body>
 
