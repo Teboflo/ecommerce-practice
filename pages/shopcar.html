@@ -1,40 +1,54 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Revisa tus productos seleccionados antes de continuar.">
-  <title>Mi carrito | Retail Bold</title>
-  <link rel="stylesheet" href="../css/car.css">
-  <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Revisa tus productos seleccionados antes de continuar.">
+    <title>Mi carrito | Retail Bold</title>
+    <link rel="stylesheet" href="../css/car.css">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
 </head>
+
 <body>
-  <header class="cart-header">
-    <a class="brand" href="../index.html" aria-label="Retail Bold, volver a la tienda">RETAIL<span>BOLD.</span></a>
-    <span class="header-note">TU SELECCIÓN, A UN PASO</span>
-  </header>
-  <main class="cart-page">
-    <div class="cart-title-row">
-      <div><p class="eyebrow">REVISA TUS FAVORITOS</p><h1>Mi carrito<span>.</span></h1><p class="cart-intro">Comprueba tu selección antes de continuar.</p></div>
-      <a href="../index.html" class="back-link">← Seguir explorando</a>
-    </div>
-    <div class="cart-layout">
-      <section class="cart-panel" aria-label="Productos seleccionados">
-        <div class="panel-heading"><h2>Tu selección</h2><span id="cart-count" class="cart-count" aria-live="polite">0 productos</span></div>
-        <div class="carrito-de-productos" aria-live="polite"><div class="cart-loading">Cargando tu carrito…</div></div>
-      </section>
-      <aside class="summary-panel" aria-label="Resumen de compra">
-        <p class="eyebrow">RESUMEN</p><h2>Tu pedido</h2>
-        <div class="summary-line"><span>Productos</span><span id="summary-items">0</span></div>
-        <div class="summary-line total-line"><span>Subtotal</span><strong id="cart-subtotal">$0.00</strong></div>
-        <p class="summary-note">El costo de entrega, si aplica, se confirmará antes de finalizar el pedido.</p>
-        <button class="checkout-button" id="compradoBtn" type="button">Continuar compra <span aria-hidden="true">→</span></button>
-        <p class="checkout-note">El pago en línea aún no está habilitado.</p>
-        <a class="continue-link" href="../index.html">＋ Añadir más productos</a>
-      </aside>
-    </div>
-  </main>
-  <footer class="cart-footer"><a class="brand" href="../index.html">RETAIL<span>BOLD.</span></a><span>Buenos productos. Buenos momentos.</span></footer>
-  <script src="../js/cart.js"></script>
+    <header class="cart-header">
+        <a class="brand" href="../index.html" aria-label="Retail Bold, volver a la tienda">RETAIL<span>BOLD.</span></a>
+        <span class="header-note">TU SELECCIÓN, A UN PASO</span>
+    </header>
+    <main class="cart-page">
+        <div class="cart-title-row">
+            <div>
+                <p class="eyebrow">REVISA TUS FAVORITOS</p>
+                <h1>Mi carrito<span>.</span></h1>
+                <p class="cart-intro">Comprueba tu selección antes de continuar.</p>
+            </div>
+            <a href="../index.html" class="back-link">← Seguir explorando</a>
+        </div>
+        <div class="cart-layout">
+            <section class="cart-panel" aria-label="Productos seleccionados">
+                <div class="panel-heading">
+                    <h2>Tu selección</h2><span id="cart-count" class="cart-count" aria-live="polite">0 productos</span>
+                </div>
+                <div class="carrito-de-productos" aria-live="polite">
+                    <div class="cart-loading">Cargando tu carrito…</div>
+                </div>
+            </section>
+            <aside class="summary-panel" aria-label="Resumen de compra">
+                <p class="eyebrow">RESUMEN</p>
+                <h2>Tu pedido</h2>
+                <div class="summary-line"><span>Productos</span><span id="summary-items">0</span></div>
+                <div class="summary-line total-line"><span>Subtotal</span><strong id="cart-subtotal">$0.00</strong>
+                </div>
+                <p class="summary-note">El costo de entrega, si aplica, se confirmará antes de finalizar el pedido.</p>
+                <button class="checkout-button" id="continue-checkout" type="button">Continuar compra <span
+                        aria-hidden="true">→</span></button>
+                <a class="continue-link" href="../index.html">＋ Añadir más productos</a>
+            </aside>
+        </div>
+    </main>
+    <footer class="cart-footer"><a class="brand" href="../index.html">RETAIL<span>BOLD.</span></a><span>Buenos
+            productos. Buenos momentos.</span></footer>
+    <script src="../js/cart.js"></script>
 </body>
+
 </html>

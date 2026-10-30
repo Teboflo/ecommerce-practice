@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Finalizar pedido</title>
+    <link rel="stylesheet" href="../css/checkout.css">
+</head>
+
+<body>
+    <main class="wrap"><a href="shopcar.html">← Volver al carrito</a>
+        <h1>Completa tu pedido</h1>
+        <div class="grid">
+            <form id="checkout-form" class="panel"><label>Nombre completo<input name="customerName" required
+                        maxlength="100" autocomplete="name"></label><label>Teléfono<input name="phone" type="tel"
+                        required maxlength="30" autocomplete="tel"></label>
+                <fieldset>
+                    <legend>Modalidad de entrega</legend><label><input type="radio" name="fulfillment" value="delivery"
+                            checked> Entrega a domicilio</label><label><input type="radio" name="fulfillment"
+                            value="pickup"> Retiro en el local</label>
+                </fieldset><label id="address-wrap">Dirección<textarea name="address" rows="3"
+                        maxlength="300"></textarea></label><label>Notas (opcional)<textarea name="notes" rows="3"
+                        maxlength="500"></textarea></label>
+                <p id="checkout-error" role="alert"></p><button type="submit">Enviar pedido por WhatsApp</button>
+            </form>
+            <aside class="panel">
+                <h2>Resumen</h2>
+                <div id="checkout-items"></div>
+                <p>Subtotal: <strong id="checkout-subtotal">$0.00</strong></p><small>El costo de entrega y total final
+                    se confirman con el negocio.</small>
+            </aside>
+        </div>
+    </main>
+    <script src="../js/checkout.js"></script>
+</body>
+
+</html>
